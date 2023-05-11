@@ -1,5 +1,5 @@
 const request = require('request');
-
+const { assert } = require('chai');
 const fetchBreedDescription = (breed, callback) => {
   const url = `https://api.thecatapi.com/v1/breeds/search?q=${breed}`;
 
